@@ -1,170 +1,103 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<!--主页-->
 
 <head>
-    <meta content="text/html; charset=UTF-8">
-    <title>明日隔山岳 世事两茫茫</title>
-    <!-- Font Awesome 图标 <国内推荐CDN>-->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <!-- 新 Bootstrap4 组件 <4条>-->
-    <!--
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
-    <!-- 以下为原head-->
-    <script src="./index/main.min.js"></script>
-    <link rel="stylesheet" href="./index/z_style.css" type="text/css" media="all">
-    <script src="./index/z_button.js"></script>
-    <link rel="stylesheet" href="./index/style.css" type="text/css" media="all">
-    <script src="./index/hm.js"></script>
-    <script src="./index/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./index/prettify.css">
-    <script type="text/javascript">
-        //通过随机事件进行更新
-        $(document).ready(function() {
-            $("#article_nav").addClass("article_nav");
-            var random_bg = Math.floor(Math.random() * 99 + 1);
-            var bg = 'url(./img/jpg/index_' + random_bg + '.jpg)';
-            $("body").css("background-image", bg);
-        });
-    </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./img_style.css">
+  <title>XiaoZhao</title>
+  <link rel="icon" type="image/png" href="./img/xz_hb.png">
 </head>
 
-<body>
-    <div id="mySidenav" class="sidenav buhuanhang">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">关闭</a>
-        <h6 id="Timenowsweek"></h6>
-        <h6 id="TimeNowS"></h6>
-        <a href="./index.html" data-id="index" title="首页" class="current">首页</a>
-        <a href="./index_picture.html" data-id="index" title="图片素材" class="current">图片素材</a>
-        <a href="./index_study.html" data-id="index" title="学习永无止境" class="current">学习永无止境</a>
-        <a href="./URL.html" data-id="index" title="旧版链接" class="current" target="_blank">旧版链接</a>
-        <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=dQIQHAUQGxIqDx0UGjUTGg0YFBwZWxYaGA" style="text-decoration:none;">联系站主</a>
-        <a href="./dr.html" data-id="index" title="DR" class="current">DR</a>
-    </div>
+<body id="main">
 
-    <div id="main">
-        <span style="font-size:30px;cursor:pointer;text-shadow: -1px -1px 1px white;" onclick="openNav()">&#9776; 菜单栏</span>
-        <div class="container main">
-            <div class="row">
-                <div class="col middle-column-home">
+  <div id="mySidenav" class="sidenav buhuanhang">
+    <a href="javascript:void(0)" class="closebtn" title="Close" onclick="closeNav()">x</a>
+    <a href="https://ixiaozhao.github.io" title="Home">Home</a>
+  </div>
 
-                    <div class="codelist codelist-desktop">
-                        <h2><i class="fa fa-list"></i> 网址收藏夹</h2>
-                        <a class="item-top item-1" href="http://www.mofunenglish.com/" target="_blank">
-                            <h4>【魔方英语】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="">
-                            <strong>看电影学习英语的网站，提高口语和听力。</strong></a>
-                        <a class="item-top item-1" href="https://www.runoob.com/" target="_blank">
-                            <h4>【菜鸟教程】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/cainiaojiaocheng.png">
-                            <strong>菜鸟教程 - 学的不仅是技术，更是梦想！<br>本站部分源码来自于此。</strong></a>
-                        <a class="item-top item-1" href="https://www.baidu.com/" target="_blank">
-                            <h4>【百度一下 你就知道】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/baidu.png">
-                            <strong>你在电脑前看这段文字，写文字的人在百度等你。<br>N年前你来到了这个世界，N年后你想改变世界。<br>期待你脚踏祥云，与百度一起改变世界。</strong></a>
-                        <a class="item-top item-1" href="https://fanyi.baidu.com/" target="_blank">
-                            <h4>【百度翻译】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/baidufanyi.png">
-                            <strong>百度翻译</strong></a>
-                        <a class="item-top item-1" href="https://meiriyiwen.com/" target="_blank">
-                            <h4>【每日一文】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/meiriyiwen.png">
-                            <strong>每天一篇精彩文章，让读书成为一种乐趣。</strong></a>
-                        <a class="item-top item-1" href="https://www.b7.cn/" target="_blank">
-                            <h4>【表情网】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/b7.png">
-                            <strong>表情包 - 斗图 ! </strong></a>
-                        <a class="item-top item-1" href="./index_random.html" target="_blank">
-                            <h4>【欣赏图片】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/snapwire-684.png">
-                            <strong>图片收集于各种图片网站<br>仅供欣赏 - 建议打开后按'F11'全屏显示</strong></a>
-                    </div>
+  <span style="font-size:33px;cursor:pointer;text-shadow: -1px -1px 1px white;float: left;" onclick="openNav()">☰</span>
 
-                    <div class="codelist codelist-desktop">
-                        <h2><i class="fa fa-list"></i> 办公相关资源</h2>
-                        <a class="item-top item-1" href="https://uzer.me/" target="_blank">
-                            <h4>【USER.ME】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/userme.png">
-                            <strong>您的云端超级应用空间</strong></a>
-                        <a class="item-top item-1" href="http://www.pptbz.com/" target="_blank">
-                            <h4>【PPT宝藏】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/pptbaozang.png">
-                            <strong>免费PPT模板下载</strong></a>
-                        <a class="item-top item-1" href="https://www.canva.cn/" target="_blank">
-                            <h4>【Canva中文官网】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/canva.png">
-                            <strong>Canva在线平面设计软件_免费设计模板素材和海量正版图片</strong></a>
-                        <a class="item-top item-1" href="https://www.keysuper.com/home" target="_blank">
-                            <h4>【即书keysuper】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/keysuper.png">
-                            <strong>在线PPT制作神器</strong></a>
-                        <a class="item-top item-1" href="https://www.photopea.com/" target="_blank">
-                            <h4>【Photopea】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/photopea.png">
-                            <strong>Online Photo Editor<br>在线PS</strong></a>
-                        <a class="item-top item-1" href="https://smallpdf.com/" target="_blank">
-                            <h4>【Smallpdf】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/smallpdf.png">
-                            <strong>A Free Solution to all your PDF Problems</strong></a>
-                    </div>
-
-                    <div class="codelist codelist-desktop">
-                        <h2><i class="fa fa-list"></i> 图库</h2>
-                        <a class="item-top item-1" href="https://www.hituyu.com/" target="_blank">
-                            <h4>【图鱼网】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/tuyu.png">
-                            <strong>完美对称无缝平铺背景图底纹素材</strong></a>
-                        <a class="item-top item-1" href="http://www.lanrentuku.com/lanren/" target="_blank">
-                            <h4>【懒人图库】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/lanrentuku.png">
-                            <strong>学会偷懒，并懒出境界是提高工作效率最有效的方法！</strong></a>
-                        <a class="item-top item-1" href="http://www.ltfc.net/" target="_blank">
-                            <h4>【中华珍宝馆】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/zhonghuaguibaoku.png">
-                            <strong>可以让你欣赏到诸多高清字画的网站</strong></a>
-                    </div>
-
-                    <div class="codelist codelist-desktop">
-                        <h2><i class="fa fa-list"></i> 其他资源</h2>
-                        <a class="item-top item-1" href="http://www.nicetool.net/" target="_blank">
-                            <h4>【NICETOOL+】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/nicetool.png">
-                            <strong>好工具网 - 用完即走，触手可及！</strong></a>
-                        <a class="item-top item-1" href="https://jingzhunyun.com/" target="_blank">
-                            <h4>【精准云工具】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/jingzhunyungongju.png">
-                            <strong>收录全网在线工具的导航站</strong></a>
-                        <a class="item-top item-1" href="https://www.allhistory.com/" target="_blank">
-                            <h4>【全历史】</h4>
-                            <img class="codeicon codeicon-36" height="36" width="36" src="./img/png/quanlishi.png">
-                            <strong>全历史</strong></a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="fixed-btn"><a class="go-top" href="javascript:void(0)" title="返回顶部" style="display: inline-block;"><i class="fa fa-angle-up"></i></a></div>
-        <div id="testClick"></div>
-        <div style="display:none;">
-        </div>
-
-        <footer class="foot2 main">
-            <h2>墨菲定律</h2>
-            <h6></h6>
-            <p>如果还能更倒霉，那么你一定会的。</p>
-        </footer>
+  <div id="container" onclick="closeNav()">
+    <div class="inner">
+      <div style="float: right;">&nbsp;<span id="Timenowsweek"></span>&nbsp;<span id="TimeNowS">&nbsp;</span>&nbsp;&nbsp;</div>
+      <img src="./img/xz_hb.png" height="55px" width="55px" />
+      &nbsp;@XiaoZhao
+      <hr>
+      <section class="clearfix">
+        <a href="http://dreach.goho.co" target="_blank" class="homes">
+          &nbsp;Efficient&nbsp;Office&nbsp;Suite
+          <img src="./img/img_Excel.png"/>
+        </a>
+        <a href="https://tophub.today" target="_blank" class="homes">
+          &nbsp;Today&nbsp;Top
+          <img src="./img/img_todaytophub.png"/>
+        </a>
+        <a href="http://ixiaozhao.picp.io" target="_blank" class="homes">
+          &nbsp;My&nbsp;Blog
+          <img src="./img/img_blog.png"/>
+        </a>
         <br>
-        <footer class="foot1 row">
-            本站部分源码来源于 <a target="_blank" href="https://www.runoob.com/" style="text-decoration:none;">菜鸟教程</a>
-            <br>
-            <strong>&copy; 2019-2020 <a href="http://beian.miit.gov.cn">苏ICP备19075363号</a></strong>
-        </footer>
+        <a href="https://www.allhistory.com" target="_blank" class="homes">
+          &nbsp;All&nbsp;History
+          <img src="./img/img_AllHistory.png"/>
+        </a>
+        <a href="http://www.stats.gov.cn/" target="_blank" class="homes">
+          &nbsp;National&nbsp;Bureau&nbsp;of&nbsp;Statistics
+          <img src="./img/img_National.png"/>
+        </a>
+        <a href="http://www.dxzy163.com/" target="_blank" class="homes">
+          &nbsp;University&nbsp;Resources
+          <img src="./img/img_dxzy.png"/>
+        </a>
+        <br>
+        <a href="https://www.runoob.com" target="_blank" class="homes">
+          &nbsp;Runoob&nbsp;Course
+          <img src="./img/img_bunoob.png"/>
+        </a>
+        <a href="https://www.lanrentuku.com" target="_blank" class="homes">
+          &nbsp;Lazy&nbsp;people&nbsp;Gallery
+          <img src="./img/img_lanrentuku.png"/>
+        </a>
+        <a href="https://gitmind.cn/" target="_blank" class="homes">
+          &nbsp;Mind&nbsp;Map
+          <img src="./img/img_GitMind.png"/>
+        </a>
+      </section>
+      <footer>
+        <hr>
+        <a href="https://aixiaozhao.gitee.io" id="excel_pj">切换到中文</a>
+        <b id="footer_year"></b>&nbsp;
+        <a href="https://ixiaozhao.github.io" title="aixiaozhao.home">aixiaozhao.home</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:drizzle_zhao@outlook.com" title="Connect US">Connect US</a><br>
+      </footer>
     </div>
-    <!--侧边导航栏尾部-->
-
+  </div>
 </body>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "230px";
+    document.getElementById("main").style.marginLeft = "230px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+  //年
+  function footer_year() {
+    var stime = (new Date());
+    document.getElementById("footer_year").innerHTML = "&nbsp;&copy;&nbsp;2019-" + stime.getFullYear() + "&nbsp;";
+  }
+  setInterval(footer_year())
+  //显示当前时间
+  var myVar = setInterval(function () { myTimer() }, 1000);
+  function myTimer() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("TimeNowS").innerHTML = t;
+  };
+  setInterval("Timenowsweek.innerHTML='星期'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
+</script>
 
 </html>

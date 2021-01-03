@@ -1,0 +1,13 @@
+
+
+#download-zip span {
+    background:transparent url(../images/zip-icon.png) 12px 50% no-repeat
+}
+
+#download-tar-gz span {
+    background:transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat
+}
+
+#img_AllHistory span {
+    background:transparent url(./img/img_AllHistory.png) no-repeat
+}
